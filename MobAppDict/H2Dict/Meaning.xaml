@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="H2Dict.Meaning"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:H2Dict"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- TitlePanel -->
+        <StackPanel Margin="19,12,0,25">
+            <TextBlock Text="DICTIONARY"
+                       Style="{ThemeResource TitleTextBlockStyle}"
+                       Typography.Capitals="SmallCaps" />
+            <TextBlock Text="Meaning"
+                       Margin="0,-6,0,0"
+                       Style="{ThemeResource HeaderTextBlockStyle}" />
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <TextBlock Margin="10,0,10,5" Name="TxtWord" Style="{ThemeResource SubheaderTextBlockStyle}">
+                Hello
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="2">
+            <ScrollViewer   VerticalScrollBarVisibility="Hidden"  VerticalScrollMode="Enabled" VerticalContentAlignment="Top" >
+                <TextBlock Margin="20,10,10,0" Name="TxtDisplay"  TextWrapping="Wrap" Style="{ThemeResource BodyTextBlockStyle}">
+                Deptrai
+                </TextBlock>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

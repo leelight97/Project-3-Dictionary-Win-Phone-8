@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="H2Dict.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:H2Dict"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <StackPanel Margin="19,12,0,25">
+                <TextBlock Text="DICTIONARY"
+                       Style="{ThemeResource TitleTextBlockStyle}"
+                       Typography.Capitals="SmallCaps" />
+                <TextBlock Text="Settings"
+                       Margin="0,-6,0,0"
+                       Style="{ThemeResource HeaderTextBlockStyle}" />
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <ComboBox Header="Type dictionary"
+                      Name="ComboBoxTypeDict"
+                      SelectionChanged="ComboBoxTypeDict_OnSelectionChanged"
+                      Margin="12,10,12,0">
+            </ComboBox>
+        </Grid>
+        <Grid Grid.Row="2">
+            <StackPanel Orientation="Horizontal">
+                <AppBarButton Icon="Add" Label="Add" Click="ButtonBase_OnClick"/>
+                <TextBlock Style="{ThemeResource BaseTextBlockStyle}"
+                           VerticalAlignment="Center">
+                    Add more language
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="3">
+            <ComboBox Header="Gender"
+                      Name="ComboBoxGender"
+                      SelectionChanged="ComboBoxGender_OnSelectionChanged"
+                      Margin="12,10,12,0">
+                
+            </ComboBox>
+        </Grid>
+    </Grid>
+</Page>

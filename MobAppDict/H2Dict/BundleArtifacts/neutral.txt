@@ -1,0 +1,3 @@
+MainPackage=E:\GoogleDrive\14-15_2\PTUDM\[Git]-Project\Wp8.1Project\MobAppDict\H2Dict\bin\Release\H2Dict_1.1.0.5_Bundle\H2Dict_1.1.0.5_AnyCPU.appx
+SymbolPackage=E:\GoogleDrive\14-15_2\PTUDM\[Git]-Project\Wp8.1Project\MobAppDict\H2Dict\AppPackages\H2Dict_1.1.0.5_Test\H2Dict_1.1.0.5_AnyCPU.appxsym
+ResourcePack=E:\GoogleDrive\14-15_2\PTUDM\[Git]-Project\Wp8.1Project\MobAppDict\H2Dict\bin\Release\H2Dict_1.1.0.5_Bundle\H2Dict_1.1.0.5_scale-100.appx
